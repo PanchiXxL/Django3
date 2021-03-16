@@ -13,7 +13,7 @@ class Type(models.Model):
         db_table='Tipo'
         ordering=['id']
 
-
+print("hola")
 class Empleado(models.Model):
     type=models.ForeignKey(Type, on_delete=models.CASCADE)
     nombre=models.CharField(max_length=30, verbose_name="Nombre: ")
